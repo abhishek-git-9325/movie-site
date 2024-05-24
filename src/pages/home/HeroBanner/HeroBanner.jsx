@@ -22,7 +22,6 @@ const HeroBanner = () => {
       : imgURL + data?.results?.[Math.floor(Math.random() * 20)].backdrop_path;
     setBackground(bg);
   }, [data]);
-  // console.log(background);
 
   const searchHandler = (e) => {
     if (e.key === "Enter" && query.length > 0) {
